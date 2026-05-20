@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="header">
+    <h1>Class Dashboard</h1>
+    <a href="/logout" class="logout">Logout</a>
+</div>
+
+<div class="class-actions">
+
+    <form method="POST" action="/add_student">
+        <input type="text" name="roll" placeholder="Enter Roll No" required>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <form method="POST" action="/start_ai_attendance">
+        <button type="submit" class="ai-btn">Start AI Attendance</button>
+    </form>
+
+</div>
+
+</body>
+</html>

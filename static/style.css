@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI;
+}
+
+body{
+    background:#d9e2ec;
+}
+
+/* HEADER */
+.header{
+    background:white;
+    text-align:center;
+    padding:25px;
+    border-bottom:4px solid #1e3a8a;
+}
+
+.header h1{
+    color:#1e3a8a;
+}
+
+.logout{
+    position:absolute;
+    right:20px;
+    top:30px;
+    text-decoration:none;
+    color:red;
+    font-weight:bold;
+}
+
+/* LOGIN BOXES */
+.login-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:60px;
+}
+
+.login-box{
+    width:250px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.login-title{
+    background:linear-gradient(to right,#2563eb,#1e3a8a);
+    color:white;
+    padding:10px;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#1e3a8a;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.btn:hover{
+    background:#2563eb;
+}
+
+/* FORM */
+.form-box{
+    width:300px;
+    margin:60px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2563eb;
+}
+
+.error{
+    color:red;
+    margin-top:10px;
+}
+
+/* TABLE */
+.table-box{
+    width:80%;
+    margin:40px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:10px;
+    border:1px solid #ccc;
+    text-align:center;
+}
+
+th{
+    background:#1e3a8a;
+    color:white;
+}
+
+/* CLASS */
+.class-actions{
+    width:300px;
+    margin:60px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+.ai-btn{
+    margin-top:10px;
+    background:green;
+}

@@ -1,0 +1,33 @@
+body{
+    background:#f4f6f9;
+    font-family:Segoe UI;
+}
+
+.topbar{
+    background:#1e3a8a;
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.topbar a{
+    color:white;
+    margin-left:15px;
+    text-decoration:none;
+}
+
+.table-container{
+    padding:30px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th,td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}

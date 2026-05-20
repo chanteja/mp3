@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="header">
+    <h1>Student Attendance</h1>
+    <a href="/logout" class="logout">Logout</a>
+</div>
+
+<div class="table-box">
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>In Time</th>
+            <th>Out Time</th>
+            <th>Total Minutes</th>
+            <th>Status</th>
+        </tr>
+
+        {% for r in records %}
+        <tr>
+            <td>{{ r.date }}</td>
+            <td>{{ r.in_time }}</td>
+            <td>{{ r.out_time }}</td>
+            <td>{{ r.minutes }}</td>
+            <td>
+                {% if r.status == "Present" %}
+                    <span style="color:green; font-weight:bold;">Present</span>
+                {% else %}
+                    <span style="color:red; font-weight:bold;">Absent</span>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+    <h3 style="text-align:center; margin-top:20px;">
+        Attendance Percentage: {{ percentage }}%
+    </h3>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ role|capitalize }} Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="header">
+    <h1>{{ role|capitalize }} Login</h1>
+</div>
+
+<div class="form-box">
+    <form method="POST">
+        <input type="text" name="username" placeholder="Username / Roll No" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <p class="error">{{ messages[0] }}</p>
+      {% endif %}
+    {% endwith %}
+
+    <a href="/" class="back">Back</a>
+</div>
+
+</body>
+</html>
